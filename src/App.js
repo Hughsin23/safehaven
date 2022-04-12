@@ -25,23 +25,24 @@ function App() {
     const [locationLng, setLocationLng] = useState(144.9631)
     const [zoom, setZoom] = useState(12)
 
+    
   return (
     <div className="App">
       <nav className="nav">
         <ul>
           <li>
-            <a href="/"><img className="home-logo"src={homelogo} alt="" /></a> 
+            <Link to="/"><img className="home-logo"src={homelogo} alt="" /></Link>
           </li>
           <li>
             <button className="report-btn">
-              <a href="/reports/new">Report Incident</a>
+              <Link to="/reports/new">Report Incident</Link>
             </button>
           </li>
         </ul>
       </nav>
 
       <div>
-        <a href="/"><img  className="main-logo" src={logo} alt="" /></a>
+        <Link to="/"><img  className="main-logo" src={logo} alt="" /></Link>
       </div>
       
       <Routes> 
